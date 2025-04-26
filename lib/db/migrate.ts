@@ -3,7 +3,8 @@ import { drizzle } from "drizzle-orm/neon-http"
 import { neon } from "@neondatabase/serverless";
 
 import * as dotenv from "dotenv"
-import { log } from "node:console";
+
+
 
 dotenv.config({path:".env.local"});
 if(!process.env.DATABASE_URL){
@@ -20,6 +21,8 @@ async function runMigration() {
 
         
     } catch (error) {
+        console.log(error);
+        
          console.log("All migrations are not done");
         process.exit(1)
     }

@@ -1,7 +1,5 @@
 import {pgTable , text , uuid ,boolean, integer , timestamp} from "drizzle-orm/pg-core"
 import {relations} from "drizzle-orm"
-import { time } from "console"
-import { Children } from "react"
 
 export const files = pgTable("files" , {
     id: uuid("id").defaultRandom().primaryKey(),

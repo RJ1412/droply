@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1745681344076,
+      "tag": "0000_curly_gamma_corps",
+      "breakpoints": true
+    }
+  ]
+}
