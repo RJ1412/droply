@@ -1,0 +1,12 @@
+import signUpForm from '@/components/SignUpForm'
+import React from 'react'
+
+function SignUpPage() {
+  return (
+    <div>
+      <SignUpPage/>
+    </div>
+  )
+}
+
+export default SignUpPage;
