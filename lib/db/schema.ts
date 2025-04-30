@@ -18,6 +18,7 @@ export const files = pgTable("files" , {
 
     isFolder: boolean("is_folder").default(false).notNull(),
     isStarred: boolean("is_starred").default(false).notNull(),
+    isTrash: boolean("is_trash").default(false).notNull(),
 
     createdAt: timestamp("created_at").defaultNow().notNull(),
     updatedAt : timestamp("updated_at").defaultNow().notNull()
@@ -38,5 +39,6 @@ export const fileRealtions = relations(files , ({one , many}) => ({
     children: many(files)
 }))
 
-export const File = typeof files.$inferSelect
+export type File = typeof files.$inferSelect
 export const NewFile = typeof files.$inferInsert
+export type DbFile = typeof files.$inferSelect;
